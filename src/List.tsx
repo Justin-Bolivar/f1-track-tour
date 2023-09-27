@@ -1,8 +1,8 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const List = ({ circuit }) => {
+
+const List = ({circuit}) => {
   return (
     <>
-      {circuit.map((track) => {
+      {circuit.map((track: {id: number, price: string, name: string, description: string, image: string}) => {
         const { id, price, name, description, image } = track;
         return (
           <article key={id} className="single-tour">

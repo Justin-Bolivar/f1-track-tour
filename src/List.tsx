@@ -6,7 +6,7 @@ const List = ({circuit}) => {
         const { id, price, name, description, image } = track;
         return (
           <article key={id} className="single-tour">
-            <img src={image} alt={name} />
+            <img src={image} alt={name} className="img" />
             <span className="tour-price">{price}</span>
             <div className="tour-info">
               <h5>{name}</h5>
